@@ -97,7 +97,7 @@ def columnar(row_table: list[dict[str, str]]) -> dict[str, list[str]]:
     return result
 
 
-def head(table: dict[str, list[str]], rows_number: int) -> dict[str, list[str]]:
+def head(table: dict[str, list[str]], n: int) -> dict[str, list[str]]:
 
     result: dict[str, list[str]] = {}
 
@@ -107,7 +107,7 @@ def head(table: dict[str, list[str]], rows_number: int) -> dict[str, list[str]]:
 
         idx = 0
 
-        while idx < rows_number:
+        while idx < n:
 
             if idx < len(table[column]):
 
